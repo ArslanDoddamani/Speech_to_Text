@@ -15,7 +15,7 @@ const Home = () => {
   const copyRef = useRef();
 
   const startListening = () => {
-    SpeechRecognition.startListening({ continuous: true});
+    SpeechRecognition.startListening({ continuous: true, language:"en-IN"});
   };
 
   const stopListening = () => {
@@ -48,7 +48,7 @@ const Home = () => {
         >
           {transcript || "Start speaking to see the transcript here..."}
         </div>
-        <div className="h-fit lg:h-10 xl:h-10 flex items-center lg:justify-between md:justify-around justify-center flex-wrap px-8 gap-5 font-semibold text-zinc-700 bg-gray-500">
+        <div className="h-fit lg:h-10 xl:h-10 flex items-center lg:justify-between md:justify-around justify-center flex-wrap px-8 gap-5 font-semibold text-zinc-700">
           <button
             onClick={() => {
               setTextCopy(copyRef.current.textContent); 
