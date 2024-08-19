@@ -41,10 +41,10 @@ const Home = () => {
         A React hook that converts speech from the microphone to text and makes
         it<br className="hidden sm:block"/> available to your React components.
       </p>
-      <div className="w-full h-3/4 sm:w-3/4 lg:w-3/4 xl:w-1/2 lg:h-3/5 xl:h-3/5 bg-zinc-50 rounded-md mt-8 drop-shadow-2xl shadow-black">
+      <div className="w-full h-4/5 sm:w-3/4 lg:w-3/4 xl:w-1/2 lg:h-3/5 xl:h-3/5 bg-zinc-50 rounded-md mt-8 drop-shadow-2xl shadow-black">
         <div
           ref={copyRef}
-          className="w-full p-4 h-[88%] text-zinc-500 text-lg overflow-y-auto"
+          className="w-full p-4 h-[75%] sm:h-[85%] text-zinc-500 text-lg overflow-y-auto"
         >
           {transcript || "Start speaking to see the transcript here..."}
         </div>
